@@ -1,0 +1,21 @@
+<div>
+    <h2>Viewing contributors for {{repo.name}}</h2>
+     <div ng-class="{'alert alert-danger': error.length > 0 }">{{ error }}</div>
+    <div>
+        Issues: {{repo.open_issues}}
+    </div>
+    <div class="panel panel-default" ng-repeat="user in repo.contributors">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{user.login}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="col-xs-6 col-md-5">
+                <a href="javascript:void(0);" class="thumbnail">
+                    <img ng-src="{{user.avatar_url}}" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#/main">Back to Search</a>
+<a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="gitHubViewer">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS GitHub Viewer</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="//code.angularjs.org/1.5.0-rc.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.5.0-rc.0/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="MainController.js"></script>
+    <script src="UserController.js"></script>
+    <script src="RepoController.js"></script>
+    <script src="github.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>GitHub Viewer</h1>
+            <div ng-view></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
